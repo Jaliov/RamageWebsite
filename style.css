@@ -67,3 +67,13 @@
     right: 0;
     cursor: pointer
 }
+
+.container .art_cat .itembox.show {
+  animation: show .5s ease 0s 1 forwards;
+  transform-origin: center;
+}
+
+.container .art_cat .itembox.show {
+  animation: hide .5s ease 0s 1 forwards;
+  transform-origin: center;
+}
