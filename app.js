@@ -31,38 +31,21 @@ const filterValue = e.target.getAttribute("data-filter");
             }
             
 )}
-document.querySelector('.art_category').addEventListener('click', (e) =>  {
+
+
+const artCat = document.querySelector('.art_category')
+// artCat.addEventListener('click', (e) =>  {
   
     console.log(filterValue)
-    itemboxes.forEach(item =>{
-                if(item.classList.contains(filterValue) ) {
-                    item.classList.add("show")
-                
-                    
-                }
-                else {
-                    item.classList.add("hide")
-                } 
-            }
+   if (filterValue === "hankie_art") {
+    artCat.innerHTML = '<a href="hankiart.html">More hankie art</a>';
+   }
+   else if(filterValue === "rules_of_game") {
+    artCat.innerHTML = '<a href="rules.html">More rules of the game</a>';
+   }
     
     
-    )
+   
 
 })
-// 1. Select all elements with the class 'myClass'
-
-})
-// 2. Define the function to run when the event occurs
-
-    
-
-     
-
-
-  // 'event.target' refers to the specific button that was clicked
-//   document.getElementById('output').textContent = `"${event.target.textContent}" was clicked!`;
-
-
-// 3. Iterate over the NodeList and add the event listener to each button
-
 
