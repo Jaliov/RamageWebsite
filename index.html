@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libby Ramage Gallery</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
+/>
+<link  href="/path/to/jquery.fancybox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,25 +26,30 @@
        </ul>
        
        <div class="art_cat">
+        
          <div class="itembox demons">
-         
-          <a href="images\libby-1.jpg"  target="_blank" > 
-           <img src="images\libby-1.jpg" data-item="demons" alt = "click"  style="width:100%;" class = "image__img"> 
-           
-            <div class = "image__overlay">
+ 
+          <a data-fancybox="gallery" href="images\libby-1 - Copy.jpg" 
+          data-fancybox = "gallery"
+          data-caption="This is a test"
+>
+    
+   <img src="images\libby-1.jpg" data-item="demons" alt = "click"   class = "image__img" aria-colcount="testa" >
+      
+              <!-- <div class = "image__overlay">
               <div class = "image__title">Artwork</div>
                <p class = "image__description">
                 painting by Libby
-               </p>
-
-
-            </div>
-          
-           </a>  
-     
-         </div>
+               </p> -->
+           
+             <!-- </div> -->
+         
+    </a>
+   
+     </div>
          <div class="itembox demons">
            <img src="images\libby-2.jpg" data-item="demons" alt = "">   
+         
          </div>
          <div class="itembox demons">
            <img src="images\libby-3.jpg" data-item="demons" alt = "">   
@@ -91,7 +101,12 @@
        
     </section>
     
-    <script src = "app.js"></script>
+    <script src = "app.js">
+    
+    </script>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+      <script src="/path/to/jquery.fancybox.min.js"></script>
 
 </body>
 </html>

@@ -6,11 +6,9 @@ const gallery = document.querySelector(".gallery")
 const itemboxes = document.querySelectorAll(".itembox")
 console.log(itemboxes)
 
-
 gallery.addEventListener("click", (e) => {
     console.log(e)
 const filterValue = e.target.getAttribute("data-filter");
-
 
    if(e.target.classList.contains("filter")) {
             gallery.querySelector(".active").classList.remove("active");
@@ -32,7 +30,6 @@ const filterValue = e.target.getAttribute("data-filter");
             
 )}
 
-
 const artCat = document.querySelector('.art_category')
 // artCat.addEventListener('click', (e) =>  {
   
@@ -48,4 +45,8 @@ const artCat = document.querySelector('.art_category')
    
 
 })
+// Source - https://stackoverflow.com/a/3230204
+// Posted by 2ndkauboy
+// Retrieved 2026-02-04, License - CC BY-SA 2.5
+
 
