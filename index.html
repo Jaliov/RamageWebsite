@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libby Ramage Gallery</title>
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
-/>
-<link  href="/path/to/jquery.fancybox.min.css" rel="stylesheet">
+ 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Libby Ramage</h1>
+ 
     <section class = "container">
        <ul class ="gallery">
          <li class="filter active" data-filter="all">All</li>
@@ -24,28 +21,26 @@
          <li class="filter"data-filter="hive_mind">Hive Mind</li>
          
        </ul>
+    
        
        <div class="art_cat">
-        
-         <div class="itembox demons">
- 
-          <a data-fancybox="gallery" href="images\libby-1 - Copy.jpg" 
-          data-fancybox = "gallery"
-          data-caption="This is a test"
->
-    
-   <img src="images\libby-1.jpg" data-item="demons" alt = "click"   class = "image__img" aria-colcount="testa" >
-      
-              <!-- <div class = "image__overlay">
-              <div class = "image__title">Artwork</div>
-               <p class = "image__description">
-                painting by Libby
-               </p> -->
-           
-             <!-- </div> -->
-         
-    </a>
    
+         <div class="itembox demons">
+
+          <a  href="images\libby-1.jpg">
+        
+   <img src="images\libby-1.jpg" data-item="demons" alt = "click"   class = "image__img" id="testa" >
+      
+              <div class = "image__overlay">
+              <div class = "image__title">Artwork by Libby</div>
+               <p class = "image__description">
+                Lorem ipsum dolor sit amet consectetur<br>
+               
+               </p>
+           
+             </div>
+    </a>
+    
      </div>
          <div class="itembox demons">
            <img src="images\libby-2.jpg" data-item="demons" alt = "">   
@@ -95,18 +90,13 @@
          </div>
          
        </div>
-       <div class="art_category"><h3>More like this</h3>
+       <div class="art_category" >
       
       </div>
        
     </section>
     
-    <script src = "app.js">
-    
-    </script>
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
-      <script src="/path/to/jquery.fancybox.min.js"></script>
-
+  <script src = "app.js"></script>
+ 
 </body>
 </html>

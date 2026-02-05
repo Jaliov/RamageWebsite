@@ -27,7 +27,7 @@
     margin-bottom: 20px;
   }
 
-  .container ul li {
+  .container   ul li {
     letter-spacing: 1px;
     padding: 5px 15px;
     cursor: pointer;
@@ -37,12 +37,32 @@
     font-weight: bold;
     font-size: 15px;
   }
+  .art_category {
+    letter-spacing: 1px;
+    color: black;
+    cursor: pointer;
+    margin-top: 1em;
+    text-transform: 1px;
+    border-bottom: 1px solid transparent;
+    font-weight: bold;
+    font-size: 15px;
+    
+  }
 
   .container ul li.active{
     border-color: #c70039;
     color: #e84545;
   }
 
+   .art_category active{
+    border-color: #c70039;
+    color: #e84545;
+  }
+
+  /* .art_category:hover{
+    background-color: #c70039;
+    /* color: #e84545; */
+  /* } */ 
 .art_cat {
     display: flex; 
     justify-content: center;
@@ -90,6 +110,8 @@
 
 .image__overlay:hover {
   opacity: 1;
+ 
+    z-index: 10; 
 }
 
 
@@ -152,10 +174,7 @@ h1 {
   text-align: center;
 }
 
-figure {
-  float: right; /* or left */
-  width: 50%; /* optional, but useful */
-}
+
 img {
   max-width: 100%;
   height: auto;
@@ -241,29 +260,4 @@ img {
 }
 
 
-/*
-Source - https://stackoverflow.com/a/13889788
-Posted by Bobby
-Retrieved 2026-02-04, License - CC BY-SA 3.0
-*/
 
-#toggle{
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-}
-
-span{
-    display: none;
-}
-
-#toggle:checked + span{
-    display: block;
-}
-
-img{
-    cursor: pointer;
-}
-#testa {
-  color:white; 
-}
