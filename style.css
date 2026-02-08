@@ -72,8 +72,8 @@
 
 .art_cat .itembox {
     position: relative;
-    width: 400px; 
-    height: 300px;
+    width: 300px; 
+    height: 200px;
     margin: 5px;
     display: block;
 }
@@ -110,8 +110,7 @@
 
 .image__overlay:hover {
   opacity: 1;
- 
-    z-index: 10; 
+  z-index: 10; 
 }
 
 
@@ -166,27 +165,31 @@
   border: 1px solid blue;
 }
 
-h1 {
+h1, h4 {
   margin-top: 1em;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  margin-bottom: 20px;
   text-align: center;
 }
 
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+.image__title  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
 
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
 }
+.image__description  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
 
-#myImg:hover {opacity: 0.7;}
+}
 
 /* The Modal (background) */
 .modal {
@@ -259,5 +262,26 @@ img {
   }
 }
 
+.placehold {
+  background-color: grey;
+}
+
+.flex_container {
+    display: flex;
+    justify-content: center; /* This centers the button horizontally */
+    align-items: center; /* This centers the button vertically */
+    margin-bottom: 1em; 
+}
+button {
+    padding: 10px 20px;
+    background-color: rgb(84, 84, 88);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+  color: red; 
+}
 
 
