@@ -31,13 +31,16 @@ const artCat = document.querySelector('.art_category')
   
     console.log(filterValue)
    if (filterValue === "hankie_art") {
+    demonsText.innerHTML = "<p>This is a description of hankie art</p>"
     artCat.innerHTML = '<ul><li><a href="hankiart.html" style="text-decoration: none;color:black;" class="filter" >More hankie art</a></li></ul>';
    }
    else if(filterValue === "rules_of_game") {
+    demonsText.innerHTML = "<p>This is a description of rules of the game</p><br>"
     artCat.innerHTML = '<a href="rules.html" style="text-decoration: none;color:black;" class="filter">More rules of the game</a>';
    }
    else {
     artCat.innerHTML = '';
+    demonsText.innerHTML = '';
    }
 
    artCat.addEventListener('mouseover', () => {

@@ -8,7 +8,10 @@
  li {
     list-style: none;
  }
-
+ body {
+  background-color: rgb(235, 235, 227);
+ }
+ 
  .container {
     padding: 10px;
     width: 100%;
@@ -72,9 +75,9 @@
 
 .art_cat .itembox {
     position: relative;
-    width: 300px; 
-    height: 200px;
-    margin: 5px;
+    width: 225px; 
+    height: 300px;
+    margin: 6px;
     display: block;
 }
 
@@ -284,4 +287,14 @@ button:hover {
   color: red; 
 }
 
+#demonsText {
+  display: flex;
+    justify-content: center;
+    align-items: center; 
+}
 
+a {
+   display: block;
+  width: 100%;
+  height: auto;
+}
