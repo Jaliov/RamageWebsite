@@ -62,21 +62,18 @@
     color: #e84545;
   }
 
-  /* .art_category:hover{
-    background-color: #c70039;
-    /* color: #e84545; */
-  /* } */ 
-.art_cat {
+ .art_cat {
     display: flex; 
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  
 }
 
 .art_cat .itembox {
     position: relative;
-    width: 225px; 
-    height: 300px;
+    width: 300px; 
+    height: 400px;
     margin: 6px;
     display: block;
 }
@@ -293,8 +290,8 @@ button:hover {
     align-items: center; 
 }
 
-a {
-   display: block;
-  width: 100%;
-  height: auto;
+img {
+    max-width: 100%;
+    max-height: 100vh;
+    height: auto;
 }

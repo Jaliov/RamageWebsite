@@ -27,8 +27,8 @@ const filterValue = e.target.getAttribute("data-filter");
 )}
 
 const artCat = document.querySelector('.art_category')
+const art_cat = document.querySelector('.art_cat')
 // artCat.addEventListener('click', (e) =>  {
-  
     console.log(filterValue)
    if (filterValue === "hankie_art") {
     demonsText.innerHTML = "<p>This is a description of hankie art</p>"
@@ -37,6 +37,11 @@ const artCat = document.querySelector('.art_category')
    else if(filterValue === "rules_of_game") {
     demonsText.innerHTML = "<p>This is a description of rules of the game</p><br>"
     artCat.innerHTML = '<a href="rules.html" style="text-decoration: none;color:black;" class="filter">More rules of the game</a>';
+    art_cat.innerHTML = "Rules of the Game";
+    const element = document.querySelector('.all_page');
+if (element) {
+  element.remove();
+}
    }
    else {
     artCat.innerHTML = '';
