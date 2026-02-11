@@ -25,23 +25,27 @@ const filterValue = e.target.getAttribute("data-filter");
             }
             
 )}
+var link = document.createElement('link');
 
-const artCat = document.querySelector('.art_category')
-const art_cat = document.querySelector('.art_cat')
-// artCat.addEventListener('click', (e) =>  {
+// Append the link element to the head of the document
+// document.head.appendChild(link);
+let artCat = document.querySelector('.art_category')
+let art_cat = document.querySelector('.art_cat')
+
     console.log(filterValue)
    if (filterValue === "hankie_art") {
     demonsText.innerHTML = "<p>This is a description of hankie art</p>"
-    artCat.innerHTML = '<ul><li><a href="hankiart.html" style="text-decoration: none;color:black;" class="filter" >More hankie art</a></li></ul>';
+    artCat.innerHTML = '<a href="hankiart.html" class="filter" >More hankie art</a>';
    }
    else if(filterValue === "rules_of_game") {
     demonsText.innerHTML = "<p>This is a description of rules of the game</p><br>"
-    artCat.innerHTML = '<a href="rules.html" style="text-decoration: none;color:black;" class="filter">More rules of the game</a>';
+    artCat.innerHTML = '<a href="rules.html"  >More rules of the game</a>'; 
+
     art_cat.innerHTML = "Rules of the Game";
     const element = document.querySelector('.all_page');
-if (element) {
-  element.remove();
-}
+      if (element) {
+        element.remove();
+          }
    }
    else {
     artCat.innerHTML = '';
