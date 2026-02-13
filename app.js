@@ -68,18 +68,31 @@ let art_cat = document.querySelector('.art_cat')
         element.remove();
           }
    }
+   else if(filterValue === "domestic_and_aBroad") {
+    demonsText.innerHTML = "<p>This is a description of domestic and aBroad</p><br>"
+    artCat.innerHTML = '<a href="aBroad.html" class ="button " >More Domestic & aBroad &rarr;</a>'; 
+
+    art_cat.innerHTML = "Domestic and aBroad";
+    const element = document.querySelector('.all_page');
+      if (element) {
+        element.remove();
+          }
+   }
     else if(filterValue === "demons") {
-  
+   artCat.innerHTML = '<a href="#" class ="#" ></a>'; 
     art_cat.innerHTML = "Demons";
     const element = document.querySelector('.all_page');
       if (element) {
         element.remove();
           }
    }
+   
    else {
     artCat.innerHTML = '';
     demonsText.innerHTML = '';
    }
+
+   
 
    artCat.addEventListener('mouseover', () => {
   // Use camelCase for hyphenated CSS properties (e.g., 'backgroundColor')
