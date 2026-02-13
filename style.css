@@ -10,7 +10,7 @@
  }
  body {
   background-color: rgb(235, 235, 227);
- }
+   }
  
  .container {
     padding: 10px;
@@ -246,29 +246,39 @@ h1{
 }
 
 #demonsText {
-  margin-bottom: 1em; 
+  margin-bottom: 2em; 
   color: rgb(51, 51, 51, .9);
   width: 75%;
-  font-family: 'Times New Roman', Times, serif;
   animation-name: slide-in-horizontal;
   animation-duration: 3s; /* Duration of the animation */
+ }
+
+ p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
  }
 
 /* Define the animation sequence */
 @keyframes slide-in-horizontal {
   /* Start 150% of the viewport width to the right of its original position */
-  from {
-    transform: translateX(150vw);
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
   }
-  /* End at its original horizontal position (no translation) */
-  to {
-    transform: translateX(0);
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }
 
 .slide-element {
   animation-name: slide-in-horizontal;
   animation-duration: 3s; 
+  
 }
 
 img {
