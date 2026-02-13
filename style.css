@@ -245,12 +245,30 @@ h1{
     padding: 10px 5px;
 }
 
-
-
 #demonsText {
-  display: flex;
-    justify-content: flex-end;
-    align-items: right; 
+  margin-bottom: 1em; 
+  color: rgb(51, 51, 51, .9);
+  width: 75%;
+  font-family: 'Times New Roman', Times, serif;
+  animation-name: slide-in-horizontal;
+  animation-duration: 3s; /* Duration of the animation */
+ }
+
+/* Define the animation sequence */
+@keyframes slide-in-horizontal {
+  /* Start 150% of the viewport width to the right of its original position */
+  from {
+    transform: translateX(150vw);
+  }
+  /* End at its original horizontal position (no translation) */
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-element {
+  animation-name: slide-in-horizontal;
+  animation-duration: 3s; 
 }
 
 img {
