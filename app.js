@@ -44,7 +44,7 @@ let art_cat = document.querySelector('.art_cat')
    }
    else if(filterValue === "rules_of_game") {
     demonsText.innerHTML = "<div class = 'slide-element'><p>A series examining the relationship of girls and women in society. Some of the work is celebratory, some cautionary.</p><br></div>"
-    artCat.innerHTML = '<a href="rules.html" class="button">More rules of the game&rarr;</a>'; 
+    artCat.innerHTML = '<a href="rules.html" class="button">More rules <br> of the game&rarr;</a>'; 
 
     art_cat.innerHTML = "Rules of the Game";
     const element = document.querySelector('.all_page');
@@ -53,7 +53,7 @@ let art_cat = document.querySelector('.art_cat')
           }
    }
    else if(filterValue === "hive_mind") {
-    demonsText.innerHTML = "<div class = 'slide-element'><p>This series was inspired by the exhibition “Animal Architects” curated by Donna Payton and a nineteenth century woodcut of a hornet hive. It began as an exploration of the cross section of a hive using a variety of materials unique to each piece. The work evolved into a tribute to the all girls high school the artist attended.</p><br>"
+    demonsText.innerHTML = "<div class = 'slide-element'><p>This series was inspired by the exhibition <em>Animal Architects</em> curated by Donna Payton and a nineteenth century woodcut of a hornet hive. It began as an exploration of the cross section of a hive using a variety of materials unique to each piece. The work evolved into a tribute to the all girls high school the artist attended.</p><br>"
     artCat.innerHTML = '<a href="hive_mind.html" class="button">More hive mind &rarr;</a></div>'; 
     
     art_cat.innerHTML = "Hive Mind";
@@ -83,7 +83,7 @@ let art_cat = document.querySelector('.art_cat')
           }
    }
     else if(filterValue === "demons") {
-      demonsText.innerHTML = "<div class = 'slide-element'><p>Images of demons meant to protect</p></div><br>"
+      demonsText.innerHTML = "<div class = 'slide-element'><p>Images of demons meant to protect. All artworks are gelli prints and collage.</p></div><br>"
    artCat.innerHTML = '<a href="#" class =" #" ></a>'; 
     art_cat.innerHTML = "Demons";
     const element = document.querySelector('.all_page');
@@ -96,8 +96,6 @@ let art_cat = document.querySelector('.art_cat')
     artCat.innerHTML = '';
     demonsText.innerHTML = '';
    }
-
-   
 
    artCat.addEventListener('mouseover', () => {
   // Use camelCase for hyphenated CSS properties (e.g., 'backgroundColor')
