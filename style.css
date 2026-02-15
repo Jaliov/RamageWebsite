@@ -27,7 +27,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+   
   }
 
   .container ul li {
@@ -38,7 +38,7 @@
     text-transform: 1px;
     border-bottom: 1px solid transparent;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 15px; 
   }
   .art_category{
     text-decoration: none; 
@@ -250,10 +250,10 @@ h1{
   color: rgb(51, 51, 51, .9);
   width: 75%;
   animation-name: slide-in-horizontal;
-  animation-duration: 3s; /* Duration of the animation */
+  animation-duration: 4s; /* Duration of the animation */
  }
 
- p {
+ p, strong, em {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
  }
 
@@ -278,7 +278,8 @@ h1{
 .slide-element {
   animation-name: slide-in-horizontal;
   animation-duration: 3s; 
-  
+  margin-top: 1em; 
+  font-size: 110%;
 }
 
 img {
@@ -315,4 +316,11 @@ img {
 .button a {
     transition: color 0.4s ease-in, background-color 0.4s ease-in;
     padding: 5px;
+}
+
+.about {
+  margin-top: 3em;
+  margin-left: 5em;
+  margin-right: 5em;
+  font-size: 20px;
 }
