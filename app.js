@@ -1,3 +1,5 @@
+
+
 //selecting ul
 const gallery = document.querySelector(".gallery")
 
@@ -109,6 +111,11 @@ let art_cat = document.querySelector('.art_cat')
 });
   
 })
+
+document.querySelector(".navbar").innerHTML = 
+            `<a href="index.html" class="active">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="about.html">About</a>` 
 
 
 
