@@ -37,7 +37,6 @@ let art_cat = document.querySelector('.art_cat')
    else if (filterValue === "hankie_art") {
     demonsText.innerHTML = "<p>Begun during Covid, these are a small selection from a large series that incorporates family image transfer and collage. </br>The hankie became the base as it represents an object that shared laughter, tears and illness in a woman’s life.</p>"
 
-   
     art_cat.innerHTML = "Hankie Art";
      const element = document.querySelector('.all_page');
       if (element) {
