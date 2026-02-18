@@ -90,6 +90,11 @@
     display: block;
 }
 
+.art_cat .data-filter{
+  flex: 0 0 33.3333%;
+  outline: 1px solid;
+}
+
 .art_cat .itembox img {
     position: absolute;
     width: 100%;
@@ -340,4 +345,7 @@ img {
  .about {
     margin: 1em; /* New margin for smaller screens */
   }
+}
+.data-filter {
+
 }

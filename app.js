@@ -83,7 +83,7 @@ let art_cat = document.querySelector('.art_cat')
    }
     else if(filterValue === "demons") {
       demonsText.innerHTML = "<div class = 'slide-element'><p>Images of demons meant to protect. All artworks are gelli prints and collage.</p></div><br>"
-   artCat.innerHTML = '<a href="#" class =" #" ></a>'; 
+  //  artCat.innerHTML = '<a href="#" class =" #" ></a>'; 
     art_cat.innerHTML = "Demons";
     const element = document.querySelector('.all_page');
       if (element) {
