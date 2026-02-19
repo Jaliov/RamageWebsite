@@ -6,17 +6,55 @@
     <title>Libby Ramage Gallery</title>
 
     <link rel="stylesheet" href="style.css" />
+     <style>
+    dialog {
+  margin-left: 3em; 
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+   background-color: rgb(232, 69, 69, 0.9);
+      /* Optional, but useful if it shouldn't span full width */
+  margin: 10% auto;
+}
+#my-modal p {
+    margin-bottom: .5em;
+    
+}
+
+dialog a {
+    text-decoration: none;
+    color: #ccc;
+}
+dialog a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Style the semi-transparent overlay that appears behind the modal */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#close-modal-btn {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;   
+}
+</style>
   </head>
   <body>
-    <header>
+   
+   <header>
         <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
           
+            <a href='ebay.com' id ="open-modal-btn">Contact</a>
+            <a href="about.html">About</a>
         </nav>
     </header>
     <h1>Libby Ramage</h1>
     <h2 class = "all_page">Gallery</h2>
     <h3 class = "art_cat"></h3>
-
+ 
     <section class="container">
       <ul class="gallery">
         <li class="filter active" data-filter="all">All</li>
@@ -490,8 +528,57 @@
         </div> 
                 <div class="art_category" >
       </div>
-    </section>
+        </section>
+      <div class = "container">
+ 
+     <style>
+    dialog {
+  margin-left: 3em; 
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+   background-color: rgb(232, 69, 69, 0.9);
+      /* Optional, but useful if it shouldn't span full width */
+  margin: 10% auto;
+}
+#my-modal p {
+    margin-bottom: .5em;
+    
+}
 
+dialog a {
+    text-decoration: none;
+    color: #ccc;
+}
+dialog a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Style the semi-transparent overlay that appears behind the modal */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#close-modal-btn {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;   
+}
+</style>
+<!-- The Modal structure -->
+<dialog id="my-modal" style = "width: 25%;" >
+  <h2>Contact</h2><br>
+  <p>Instagram: libbyramage</p> 
+  <p>Email: ramcar1980@gmail.com</p>
+  <p><a href = "https://www.ugallery.com/pages/libby-ramage">Ugallery.com</a></p><br>
+  
+  <a href = "#" id="close-modal-btn">Close</button>
+</dialog>
+</div>
+  
+    
     <script src="app.js"></script>
+
+ 
   </body>
 </html>

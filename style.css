@@ -347,3 +347,35 @@ img {
     margin: 1em; /* New margin for smaller screens */
   }
 }
+dialog {
+  margin-left: 3em; 
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+   background-color: rgb(232, 69, 69, 0.9);
+      /* Optional, but useful if it shouldn't span full width */
+  margin: 10% auto;
+}
+#my-modal p {
+    margin-bottom: .5em;
+    
+}
+
+dialog a {
+    text-decoration: none;
+    color: #ccc;
+}
+dialog a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Style the semi-transparent overlay that appears behind the modal */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#close-modal-btn {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;   
+}

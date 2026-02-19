@@ -26,6 +26,7 @@ const filterValue = e.target.getAttribute("data-filter");
                 } 
             }         
 )}
+
 var link = document.createElement('link');
 let artCat = document.querySelector('.art_category')
 let art_cat = document.querySelector('.art_cat')
@@ -111,9 +112,19 @@ let art_cat = document.querySelector('.art_cat')
 
 document.querySelector(".navbar").innerHTML = 
             `<a href="index.html" class="active">Home</a>
-            <a href="#contact">Contact</a>
+             <a href='#' id ="open-modal-btn">Contact</a>
             <a href="about.html">About</a>` 
 
+ const modal = document.getElementById("my-modal");
+const openModalBtn = document.getElementById("open-modal-btn");
+const closeModalBtn = document.getElementById("close-modal-btn");
 
+// When the user clicks the open button, open the modal as a modal dialog
+openModalBtn.addEventListener("click", () => {
+  modal.showModal();
+});
 
-
+// When the user clicks the close button, close the modal
+closeModalBtn.addEventListener("click", () => {
+  modal.close();
+});

@@ -12,7 +12,7 @@
         <nav class="navbar">
             <a href="index.html" class="active">Home</a>
           
-            <a href="#contact">Contact</a>
+            <a href='#' id ="open-modal-btn">Contact</a>
             <a href="about.html">About</a>
         </nav>
     </header>
@@ -41,7 +41,7 @@ Princeton Nursery School as well as working on residency projects in the
 Princeton public elementary schools. She has also illustrated the children’s
 book <em>One By One</em> by Harlan Platt
     </p>
-        <h3 style = "margin-bottom: .25em;margin-top:2em;">Artist Statement</h3>
+        <h3 style = "margin-bottom: .25em;margin-top:2cqb;">Artist Statement</h3>
         <p>My work is an elegy to all the ephemera in my life. I layer printed papers such as
 almanac pages, dictionary excerpts and cast off art work with my own drawing and
 painting. The materials and I are storytellers in a visual world. I include text to imply
@@ -53,6 +53,74 @@ Recently I have been fortunate to have a print studio where I have been explorin
 use of gel plates. I combine printed textures with collage to create demons to protect me
 from the world.</p>
     </div>
+<div class = "container">
+ 
+ 
+<!-- The Modal structure -->
+<dialog id="my-modal" style = "width: 25%;" >
+  <h2>Contact</h2><br>
+  <p>Instagram: libbyramage</p> 
+  <p>Email: ramcar1980@gmail.com</p>
+  <p><a href = "https://www.ugallery.com/pages/libby-ramage">Ugallery.com</a></p><br>
+  
+  <a href = "#" id="close-modal-btn">Close</button>
+</dialog>
+</div>
+
+<style>
+dialog {
+  margin-left: 3em; 
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+   background-color: rgb(232, 69, 69, 0.9);
+      /* Optional, but useful if it shouldn't span full width */
+  margin: 10% auto;
+}
+#my-modal p {
+    margin-bottom: .5em;
+    
+}
+
+dialog a {
+    text-decoration: none;
+    color: #ccc;
+}
+dialog a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Style the semi-transparent overlay that appears behind the modal */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#close-modal-btn {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;   
+}
+     </style>    
+
+<script>
+    // Get references to the modal, open button, and close button
+const modal = document.getElementById("my-modal");
+const openModalBtn = document.getElementById("open-modal-btn");
+const closeModalBtn = document.getElementById("close-modal-btn");
+
+// When the user clicks the open button, open the modal as a modal dialog
+openModalBtn.addEventListener("click", () => {
+  modal.showModal();
+});
+
+// When the user clicks the close button, close the modal
+closeModalBtn.addEventListener("click", () => {
+  modal.close();
+});
+
+</script>
+</body>
+</html>
    
 </body>
 
