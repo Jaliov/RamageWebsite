@@ -36,7 +36,7 @@ let art_cat = document.querySelector('.art_cat')
     window.location.href = "index.html";
    }
    else if (filterValue === "hankie_art") {
-    demonsText.innerHTML = "<p>Begun during Covid, these are a small selection from a large series that incorporates family image transfer and collage. </br>The hankie became the base as it represents an object that shared laughter, tears and illness in a woman’s life.</p>"
+    demonsText.innerHTML = "<div class = 'slide-element'><p>Begun during Covid, these are a small selection from a large series that incorporates family image transfer and collage. </br>The hankie became the base as it represents an object that shared laughter, tears and illness in a woman’s life.</p></div>"
 
     art_cat.innerHTML = "Hankie Art";
      const element = document.querySelector('.all_page');
@@ -110,12 +110,12 @@ let art_cat = document.querySelector('.art_cat')
   
 })
 
-document.querySelector(".navbar").innerHTML = 
-            `<a href="index.html" class="active">Home</a>
-             <a href='#' id ="open-modal-btn">Contact</a>
-            <a href="about.html">About</a>` 
+// document.querySelector(".navbar").innerHTML = 
+//             `<a href="index.html" class="active">Home</a>
+//              <a href='#' id ="open-modal-btn">Contact</a>
+//             <a href="about.html">About</a>` 
 
- const modal = document.getElementById("my-modal");
+const modal = document.getElementById("my-modal");
 const openModalBtn = document.getElementById("open-modal-btn");
 const closeModalBtn = document.getElementById("close-modal-btn");
 

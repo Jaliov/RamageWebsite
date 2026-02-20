@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Libby Ramage Gallery</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
      <style>
     dialog {
@@ -46,8 +48,7 @@ dialog::backdrop {
    <header>
         <nav class="navbar">
             <a href="index.html" class="active">Home</a>
-          
-            <a href='ebay.com' id ="open-modal-btn">Contact</a>
+            <a href='#' id ="open-modal-btn">Contact</a>
             <a href="about.html">About</a>
         </nav>
     </header>
@@ -56,13 +57,14 @@ dialog::backdrop {
     <h3 class = "art_cat"></h3>
  
     <section class="container">
-      <ul class="gallery">
-        <li class="filter active" data-filter="all">All</li>
-        <li class="filter" data-filter="demons">Demons</li>
-        <li class="filter" data-filter="rules_of_game">Rules of the Game</li>
-        <li class="filter" data-filter="hankie_art">Hankie Art</li>
-        <li class="filter" data-filter="ghosts">Ghosts</li>
-        <li class="filter" data-filter="domestic_and_aBroad">
+      <ul class="gallery" >
+        <li class="filter active 
+        roboto-serif" data-filter="all">All</li>
+        <li class="filter roboto-serif" data-filter="demons">Demons</li>
+        <li class="filter roboto-serif" data-filter="rules_of_game">Rules of the Game</li>
+        <li class="filter roboto-serif" data-filter="hankie_art">Hankie Art</li>
+        <li class="filter roboto-serif" data-filter="ghosts">Ghosts</li>
+        <li class="filter roboto-serif" data-filter="domestic_and_aBroad">
           Domestic and aBroad
         </li>
         <li class="filter" data-filter="hive_mind">Hive Mind</li>
@@ -531,7 +533,7 @@ dialog::backdrop {
         </section>
       <div class = "container">
  
-     <style>
+     <!-- <style>
     dialog {
   margin-left: 3em; 
   padding: 20px;
@@ -546,6 +548,7 @@ dialog::backdrop {
     
 }
 
+
 dialog a {
     text-decoration: none;
     color: #ccc;
@@ -559,14 +562,10 @@ dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#close-modal-btn {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;   
-}
-</style>
+
+</style> -->
 <!-- The Modal structure -->
-<dialog id="my-modal" style = "width: 25%;" >
+<dialog id="my-modal"  >
   <h2>Contact</h2><br>
   <p>Instagram: libbyramage</p> 
   <p>Email: ramcar1980@gmail.com</p>

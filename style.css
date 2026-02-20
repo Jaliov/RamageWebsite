@@ -27,7 +27,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-   
   }
 
   .container ul li {
@@ -40,6 +39,7 @@
     font-weight: bold;
     font-size: 17px;
   }
+
   .art_category{
     text-decoration: none; 
     letter-spacing: 1px;
@@ -64,11 +64,6 @@
     color: #e84545;
   }
   
-  .more {
-    color: black;
-    text-decoration: none;
-  }
-
   .container ul li.active{
     border-color: #c70039;
     color: #e84545;
@@ -78,8 +73,7 @@
     display: flex; 
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
 
 .art_cat .itembox {
@@ -182,7 +176,7 @@ h1 ,h2, h4 {
 }
 
 h3, .slide-element {
-  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: 'roboto-serif', Georgia,'Times New Roman', serif;
   font-weight: bold; 
   font-size: 110%;
 }
@@ -222,6 +216,7 @@ h1{
   font-weight: bold;
   transition: 0.3s;
 }
+
 
 .close:hover,
 .close:focus {
@@ -271,7 +266,8 @@ h1{
  }
 
  p, strong, em {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  /* font-family: 'roboto-serif',  serif; */
+  margin-bottom: .25em; 
  }
 
 /* Define the animation sequence */
@@ -296,14 +292,12 @@ h1{
   animation-name: slide-in-horizontal;
   animation-duration: 3s; 
   margin-top: 1em; 
-  font-size: 110%;
+  font-size: 100%;
+  background-color: rgb(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7)
 }
 
-img {
-    max-width: 100%;
-    max-height: 100vh;
-    height: auto;
-}
+
 
 .navbar {
     overflow: hidden;
@@ -342,11 +336,16 @@ img {
   font-size: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 920px) {
  .about {
-    margin: 1em; /* New margin for smaller screens */
+    margin: 1em; 
+    width: 90%
   }
 }
+
+
+
+
 dialog {
   margin-left: 3em; 
   padding: 20px;
@@ -354,11 +353,20 @@ dialog {
   border: 1px solid #ccc;
    background-color: rgb(232, 69, 69, 0.9);
       /* Optional, but useful if it shouldn't span full width */
-  margin: 10% auto;
+  margin: 10vh auto;
+  width: 20vw;
 }
+
 #my-modal p {
-    margin-bottom: .5em;
-    
+    margin-bottom: .5em;   
+}
+@media screen and (max-width: 900px) {
+  #my-modal  {
+    width: 50vw;
+    position: fixed; 
+    margin-top: 10vh;
+  }
+  
 }
 
 dialog a {
@@ -375,7 +383,13 @@ dialog::backdrop {
 }
 
 #close-modal-btn {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;   
+    margin-left: auto;
+    margin-right: auto;
+     width: 20%;  
+}
+
+.roboto-serif {
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+ 
 }
