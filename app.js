@@ -2,7 +2,6 @@
 
 //selecting ul
 const gallery = document.querySelector(".gallery")
-
 //select imagebox
 const itemboxes = document.querySelectorAll(".itembox")
 console.log(itemboxes)
@@ -54,8 +53,7 @@ let art_cat = document.querySelector('.art_cat')
           }
    }
    else if(filterValue === "hive_mind") {
-    demonsText.innerHTML = "<div class = 'slide-element'><p>This series was inspired by the exhibition <em>Animal Architects</em> curated by Donna Payton and a nineteenth century woodcut of a hornet hive. It began as an exploration of the cross section of a hive using a variety of materials unique to each piece. The work evolved into a tribute to the all girls high school the artist attended.</p><br>"
-    
+    demonsText.innerHTML = "<div class = 'slide-element'><p>This series was inspired by the exhibition <em>Animal Architects</em> curated by Donna Payton and a nineteenth century woodcut of a hornet hive. It began as an exploration of the cross section of a hive using a variety of materials unique to each piece. The work evolved into a tribute to the all girls high school the artist attended.</p>"
     
     art_cat.innerHTML = "Hive Mind";
     const element = document.querySelector('.all_page');
@@ -64,7 +62,7 @@ let art_cat = document.querySelector('.art_cat')
           }
    }
    else if(filterValue === "ghosts") {
-    demonsText.innerHTML = "<div class = 'slide-element'><p>Using old family photographs the artist inherited, each piece tells a story of a memory of people and times long gone.</p><br>"
+    demonsText.innerHTML = "<div class = 'slide-element'><p>Using old family photographs the artist inherited, each piece tells a story of a memory of people and times long gone.</p>"
    
     art_cat.innerHTML = "Ghosts";
     const element = document.querySelector('.all_page');
@@ -73,9 +71,8 @@ let art_cat = document.querySelector('.art_cat')
           }
    }
    else if(filterValue === "domestic_and_aBroad") {
-    demonsText.innerHTML = "<div class = 'slide-element'><p>This series exists because of the discovery of the artist’s step grandmother’s album of her trip to Europe in the fifties. Hilda was a formidable woman who ruled her husband and children. Theater fonts and images of the period serve as inspiration as well.</p></div><br>"
+    demonsText.innerHTML = "<div class = 'slide-element'><p>This series exists because of the discovery of the artist’s step grandmother’s album of her trip to Europe in the fifties. Hilda was a formidable woman who ruled her husband and children. Theater fonts and images of the period serve as inspiration as well.</p></div>"
   
-
     art_cat.innerHTML = "Domestic and aBroad";
     const element = document.querySelector('.all_page');
       if (element) {
@@ -107,7 +104,6 @@ let art_cat = document.querySelector('.art_cat')
   artCat.style.backgroundColor = 'initial';
   artCat.style.color = 'initial';
 });
-  
 })
 
 // document.querySelector(".navbar").innerHTML = 
