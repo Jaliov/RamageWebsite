@@ -343,28 +343,29 @@ h1{
   }
 }
 
-
-
-
 dialog {
   margin-left: 3em; 
   padding: 20px;
   border-radius: 5px;
   border: 1px solid #ccc;
-   background-color: rgb(232, 69, 69, 0.9);
+   background-color: rgb(232, 69, 69, 0.8);
+   font-size: 110%;
       /* Optional, but useful if it shouldn't span full width */
   margin: 10vh auto;
   width: 20vw;
 }
 
 #my-modal p {
-    margin-bottom: .5em;   
+    margin-bottom: .5em;  
+    margin-right: .5em;  
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
   #my-modal  {
-    width: 50vw;
-    position: fixed; 
-    margin-top: 10vh;
+   width: 300px;
+  height: 225px;
+  max-width: 90%; /* Prevents modal from exceeding 90% width on small screens */
+  max-height: 100vh;
+  margin-top: 10vh;
   }
   
 }

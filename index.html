@@ -67,29 +67,33 @@ dialog::backdrop {
         <li class="filter roboto-serif" data-filter="domestic_and_aBroad">
           Domestic and aBroad
         </li>
-        <li class="filter" data-filter="hive_mind">Hive Mind</li>
+        <li class="filter roboto-serif" data-filter="hive_mind">Hive Mind</li>
       </ul>
 
  <div class = "flex_container" id = "demonsText"></div>
  
       <div class="art_cat">
          <div class="itembox demons">
-            <a href="images\Demons\IMG_3370.jpg" >
+              <a href="images\Rules\IMG_2042.jpg " target="_blank">
+            <img src="images\Demons\IMG_3370.jpg" alt="Open Image">
           <img src="images\Demons\IMG_3370.jpg" data-item="demons" alt="image" class="image__img" />
           <div class="image__overlay">
               <div class="image__title">Demon of Anxiety</div>
             </div> 
           </a>
         </div>
-        <div class="itembox rules_of_game">
-            <a href="images\Rules\IMG_2042.jpg" >
-          <img src="images\Rules\IMG_2042.jpg" data-item="rules_of_game" alt="image" class="image__img" />
+
+     
+
+        <div class="itembox rules_of_game" >
+            <a href="images\Rules\IMG_2042.jpg " target="_blank">
+          <img src="images\Rules\IMG_2042.jpg"  onclick="openModal('images\Rules\IMG_2042.jpg')"data-item="rules_of_game" alt="image" class="image__img" />
           <div class="image__overlay">
               <div class="image__title">Reveal Your Self and Be (detail)</div>
             </div> 
           </a>
         </div>  
-    
+  
          <div class="itembox demons">
             <a href="images\Demons\IMG_3373.jpg" >
           <img src="images\Demons\IMG_3373.jpg" data-item="demons" alt="image" class="image__img"/>
@@ -577,6 +581,28 @@ dialog::backdrop {
   
     
     <script src="app.js"></script>
+    <script>
+   function openModal(imgSrc) {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+  
+  modal.style.display = "block"; // Show the container
+  modalImg.src = imgSrc;         // Set the large image source
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+
+// Optional: Close modal if user clicks the dark background
+window.onclick = function(event) {
+  const modal = document.getElementById("imageModal");
+  if (event.target == modal) {
+    closeModal();
+  }
+}
+
+</script>
 
  
   </body>
