@@ -7,10 +7,7 @@
     <title>About Libby</title>
     <link rel="stylesheet" href="css\style.css" />
     <link rel="stylesheet" href="css\info_modal.css" />
-    <style>
-    </style>
 </head>
-
 <body>
     <header>
         <nav class="navbar">
@@ -72,22 +69,7 @@
         </dialog>
     </div>
 
-    <script>
-        const modal = document.getElementById("my-modal");
-        const openModalBtn = document.getElementById("open-modal-btn");
-        const closeModalBtn = document.getElementById("close-modal-btn");
-
-        // When the user clicks the open button, open the modal as a modal dialog
-        openModalBtn.addEventListener("click", () =>
-        {
-            modal.showModal();
-        });
-        // When the user clicks the close button, close the modal
-        closeModalBtn.addEventListener("click", () =>
-        {
-            modal.close();
-        });
-    </script>
+    <script src = "js\modal.js"></script>
 </body>
 
 </html>
