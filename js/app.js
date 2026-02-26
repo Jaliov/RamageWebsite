@@ -45,7 +45,7 @@ let art_cat = document.querySelector('.art_cat')
           }
    }
    else if(filterValue === "rules_of_game") {
-    demonsText.innerHTML = "<div class = 'slide-element'><p>A series examining the relationship of girls and women in society. Some of the work is celebratory, some cautionary.</p><br></div>"
+    demonsText.innerHTML = "<div class = 'slide-element'><p>A series examining the relationship of girls and women in society. Some of the work is celebratory, some cautionary.</p></div>"
    
     art_cat.innerHTML = "Rules of the Game";
     const element = document.querySelector('.all_page');
