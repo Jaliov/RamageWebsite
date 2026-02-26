@@ -1,5 +1,6 @@
 
 
+
 //selecting ul
 const gallery = document.querySelector(".gallery")
 //select imagebox

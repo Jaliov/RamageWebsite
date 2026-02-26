@@ -5,52 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Libby</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css\info_modal.css" />
     <style>
-        dialog {
-            margin-left: 3em;
-            padding: 20px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            background-color: rgb(232, 69, 69, 0.9);
-            /* Optional, but useful if it shouldn't span full width */
-            margin: 10% auto;
-        }
-        #my-modal p {
-            margin-bottom: .5em;
-        }
-
-        dialog a {
-            text-decoration: none;
-            color: #ccc;
-        }
-
-        dialog a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        /* Style the semi-transparent overlay that appears behind the modal */
-        dialog::backdrop {
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        #close-modal-btn {
-            display: flex;
-            justify-content: center;
-            /* Centers horizontally */
-            align-items: center;
-        }
     </style>
-
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
-            <a href='#' id="open-modal-btn">Contact</a>
+            <div class="container-fluid">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href='#' id="open-modal-btn">Contact</a>
+            </div>
         </nav>
     </header>
     <h1>About Libby</h1>
@@ -71,15 +39,15 @@
                 Institute of American Art national Midyear</strong> show in 2012, 2015 and 2021.
         </p>
         <p>Libby was the visual artist in a flamenco residency <em>Finding Light Through
-        Fire</em> at the Arts Council of Princeton where she created projected art work
-        for the choreographies as well as painted live on panels of Zen paper to
-        musical performances.
-        Libby has worked with the Arts Council of Princeton for many years as an
-        exhibitor and an instructor of children’s classes, summer camps and after
-        school programs. She created an award winning art program for the
-        Princeton Nursery School as well as working on residency projects in the
-        Princeton public elementary schools. She has also illustrated the children’s
-        book <em>One By One</em> by Harlan Platt
+                Fire</em> at the Arts Council of Princeton where she created projected art work
+            for the choreographies as well as painted live on panels of Zen paper to
+            musical performances.
+            Libby has worked with the Arts Council of Princeton for many years as an
+            exhibitor and an instructor of children’s classes, summer camps and after
+            school programs. She created an award winning art program for the
+            Princeton Nursery School as well as working on residency projects in the
+            Princeton public elementary schools. She has also illustrated the children’s
+            book <em>One By One</em> by Harlan Platt
         </p><br>
         <h3 style="margin-bottom: .25em;margin-top:4px;">Artist Statement</h3>
         <p>My work is an elegy to all the ephemera in my life. I layer printed papers such as
@@ -103,7 +71,7 @@
             <a href="#" id="close-modal-btn">Close</button>
         </dialog>
     </div>
-    <!-- <script src = "app.js"></script> -->
+
     <script>
         const modal = document.getElementById("my-modal");
         const openModalBtn = document.getElementById("open-modal-btn");
@@ -114,7 +82,6 @@
         {
             modal.showModal();
         });
-
         // When the user clicks the close button, close the modal
         closeModalBtn.addEventListener("click", () =>
         {
