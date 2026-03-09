@@ -406,4 +406,5 @@ dialog::backdrop {
 
 #home__title {
   font-family: "Roboto Serif", serif;
+  color:rgba(0, 0, 0, 0.6)
 }

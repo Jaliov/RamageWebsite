@@ -125,3 +125,4 @@ openModalBtn.addEventListener("click", () => {
 closeModalBtn.addEventListener("click", () => {
   modal.close();
 });
+
