@@ -33,7 +33,7 @@ let art_cat = document.querySelector('.art_cat')
 
     console.log(filterValue)
    if (filterValue === "all") {
-    window.location.href = "index.html";
+    window.location.href = "gallery.html";
    }
    else if (filterValue === "hankie_art") {
     demonsText.innerHTML = "<div class = 'slide-element'><p>Begun during Covid, these are a small selection from a large series that incorporates family image transfer and collage. </br>The hankie became the base as it represents an object that shared laughter, tears and illness in a woman’s life.</p></div>"
