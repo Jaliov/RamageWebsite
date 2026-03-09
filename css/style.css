@@ -175,12 +175,13 @@ h1 ,h2, h4 {
   text-align: center;
 }
 
-h3, .slide-element {
+h3  {
   font-family: 'roboto-serif', Georgia,'Times New Roman', serif;
   font-weight: bold; 
   font-size: 110%;
   color:rgba(0, 0, 0, 0.6)
 }
+
 h1{
   margin-top: 2.5em;
   margin-bottom: .5em;

@@ -30,6 +30,8 @@ const filterValue = e.target.getAttribute("data-filter");
 var link = document.createElement('link');
 let artCat = document.querySelector('.art_category')
 let art_cat = document.querySelector('.art_cat')
+const element = document.querySelector(".art_cat")
+element.style = "font-family: Arial, Helvetica, sans-serif;"
 
     console.log(filterValue)
    if (filterValue === "all") {
