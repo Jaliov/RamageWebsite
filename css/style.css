@@ -179,6 +179,7 @@ h3, .slide-element {
   font-family: 'roboto-serif', Georgia,'Times New Roman', serif;
   font-weight: bold; 
   font-size: 110%;
+  color:rgba(0, 0, 0, 0.6)
 }
 h1{
   margin-top: 2.5em;
