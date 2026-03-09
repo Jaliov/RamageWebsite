@@ -394,3 +394,16 @@ dialog::backdrop {
   font-optical-sizing: auto;
  
 }
+
+#landing__img {
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem; 
+  width: 470px;/* The width you want to force */
+  height: 507px;
+  position: relative; 
+}
+
+#home__title {
+  font-family: "Roboto Serif", serif;
+}
