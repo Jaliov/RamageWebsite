@@ -410,3 +410,9 @@ dialog::backdrop {
   font-family: "Roboto Serif", serif;
   color:rgba(0, 0, 0, 0.6)
 }
+
+.icon {
+  vertical-align: middle; /* Aligns the center of the SVG with the middle of the text */
+  width: 1.5em; /* Optional: Scale SVG relative to current font size */
+  height: 1.5em; /* Optional: Scale SVG relative to current font size */
+}
