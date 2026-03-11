@@ -6,6 +6,7 @@ dialog {
       background-color: rgb(232, 69, 69, 0.9);
       /* Optional, but useful if it shouldn't span full width */
       margin: 10% auto;
+      
     }
 
     #my-modal p {
