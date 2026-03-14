@@ -19,16 +19,8 @@
     justify-content: center;
     align-items: center; 
     flex-direction: column;
-    margin: 30px auto; 
+ 
  }
-
- @media(max-width: 480px) {
- .container {
-     padding: 5px;
-     margin: 20px auto; 
-  }
-}
-
   .container ul {
     display: flex; 
     justify-content: center;
@@ -313,7 +305,7 @@ h1{
     width: 100%; /* Ensures it stretches across the full width */
     z-index: 1000; /* Ensures it stays on top of other elements */
     padding-left: 2em;
-    background-color: rgb(232, 69, 69, 0.8);
+    background-color: rgb(232, 69, 69, 0.7);
 }
 
 /* Style the links inside the navigation bar */
@@ -420,7 +412,11 @@ dialog::backdrop {
 
 #home__title {
   font-family: "Roboto Serif", serif;
-  color:rgba(0, 0, 0, 0.6)
+  color:rgba(0, 0, 0, 0.6);
+     margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .icon {
@@ -428,3 +424,4 @@ dialog::backdrop {
   width: 1.5em; /* Optional: Scale SVG relative to current font size */
   height: 1.5em; /* Optional: Scale SVG relative to current font size */
 }
+

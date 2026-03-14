@@ -107,5 +107,27 @@ element.style = "font-family: Arial, Helvetica, sans-serif;"
 });
 })
 
+const scrollHeader = () => {
+    const header = document.getElementById('header')
+    document.querySelector(".navbar").style.backgroundColor = "blue";
+    // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+    this.scrollY >= 60 ? header.classList.add('scroll-header')
+                      :header.classList.remove('scroll-header')
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/*=============== ADD BLUR TO HEADER ===============*/
+
+const blurHeader = () => {
+    const header = document.getElementById('header')
+    
+    // When the scroll is greater than 50 viewport height, add the blur-header class to the header tag
+    this.scrollY >= 60 ? header.classList.add('blur-header')
+                      :header.classList.remove('blur-header')
+}
+window.addEventListener('scroll', blurHeader)
+
+
 
 
