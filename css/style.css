@@ -306,6 +306,9 @@ h1{
     z-index: 1000; /* Ensures it stays on top of other elements */
     padding-left: 2em;
     background-color: rgb(232, 69, 69, 0.7);
+     backdrop-filter: blur(24px);
+    --webkit-backdrop-filter: blur(30px); /* For safari */
+    transition: right .4s;
 }
 
 /* Style the links inside the navigation bar */
