@@ -230,7 +230,6 @@ h1{
 
 /* 100% Image Width on Smaller Screens */
 
-
 .placehold {
   background-color: grey;
 }
@@ -264,7 +263,7 @@ h1{
 
 @media screen and (max-width: 920px) {
  .about {
-    margin: 1em; 
+    margin: 2em; 
     width: 90%
   }
 }
@@ -353,13 +352,11 @@ h1{
 }
 
 .about {
-  margin-top: 3em;
-  margin-left: 8em;
-  margin-right: 5em;
+  margin-top: 1.5em;
+  margin-left: 2rem;
+  margin-right: 2rem;
   font-size: 20px;
 }
-
-
 
 dialog {
   margin-left: 3em; 
@@ -381,11 +378,7 @@ dialog {
 #my-modal p {
     margin-bottom: .5em;  
     margin-right: .5em;  
-   
-   
 }
-
-
 
 dialog a {
     text-decoration: none;
@@ -409,7 +402,6 @@ dialog::backdrop {
 .roboto-serif {
   font-family: "Roboto Serif", serif;
   font-optical-sizing: auto;
- 
 }
 
 #landing__img {
@@ -421,13 +413,14 @@ dialog::backdrop {
   position: relative; 
 }
 
-#home__title {
+.home__title {
   font-family: "Roboto Serif", serif;
   color:rgba(0, 0, 0, 0.6);
      margin-top: 3.5rem;
     margin-bottom: 2.5rem;
     margin-left: auto;
     margin-right: auto;
+   font-weight: bold;
 }
 
 .icon {
