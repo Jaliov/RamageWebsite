@@ -169,6 +169,13 @@
   }
 }
 
+@media screen and (max-width: 720px) {
+  .home__title {
+   margin-bottom: 10px;
+   
+  }
+}
+
 
 h1 ,h2, h4 {
   display: flex;
@@ -253,6 +260,16 @@ h1{
     color: black;
     font-size: 17px;
    
+}
+
+.home__title {
+  font-family: "Roboto Serif", serif;
+  color:rgba(0, 0, 0, 0.6);
+     margin-top: 100px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+   font-weight: bold;
 }
 
 @media only screen and (max-width: 700px){
@@ -413,15 +430,6 @@ dialog::backdrop {
   position: relative; 
 }
 
-.home__title {
-  font-family: "Roboto Serif", serif;
-  color:rgba(0, 0, 0, 0.6);
-     margin-top: 3.5rem;
-    margin-bottom: 2.5rem;
-    margin-left: auto;
-    margin-right: auto;
-   font-weight: bold;
-}
 
 .icon {
   vertical-align: middle; /* Aligns the center of the SVG with the middle of the text */
