@@ -172,11 +172,8 @@
 @media screen and (max-width: 720px) {
   .home__title {
    margin-bottom: 10px;
-   
   }
 }
-
-
 h1 ,h2, h4 {
   display: flex;
   justify-content: center;
@@ -424,6 +421,16 @@ dialog::backdrop {
   width: 470px;/* The width you want to force */
   height: 507px;
   position: relative; 
+}
+
+@media(max-width: 480px) {
+  #landing__img {
+    img {
+  max-width: 100%; /* Ensures the image doesn't exceed its original size or container width */
+  height: auto;    /* Automatically calculates height to maintain proportion */
+  display: block;  /* Optional: Helps with alignment and margin control */
+} 
+    }
 }
 
 
