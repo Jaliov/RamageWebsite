@@ -326,7 +326,7 @@ h3  {
   font-size: 100%;
   background-color: rgb(255, 255, 255, 0.7);
   color: rgba(0, 0, 0, 0.7);
-  box-shadow: 10px 5px #ddd;
+   box-shadow: 0 4px 12px hsla(228, 15%, 8%, .4);
   padding: .25em;
   border-radius: .25rem;
 }
@@ -465,7 +465,7 @@ dialog::backdrop {
   padding: 6px; 
   display: inline-flex;
   border-radius: .25rem;
-  /* color: var(--first-color); */
+  color: rgba(0, 0, 0, 0.7);
   font-size: 1.25rem; 
   box-shadow: 0 4px 12px hsla(228, 15%, 8%, .4);
   /* z-index: var(--x-tooltip); */
