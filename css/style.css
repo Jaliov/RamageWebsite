@@ -325,7 +325,9 @@ h3  {
   margin-top: 1em; 
   font-size: 100%;
   background-color: rgb(255, 255, 255, 0.7);
-  color: rgba(0, 0, 0, 0.7)
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: 10px 5px #ddd;
+  padding: .25em;
 }
 
 .navbar {
@@ -335,7 +337,7 @@ h3  {
     width: 100%; /* Ensures it stretches across the full width */
     z-index: 1000; /* Ensures it stays on top of other elements */
     padding-left: 2em;
-    background-color: rgb(232, 69, 69, 0.7);
+    background-color: rgb(232, 69, 69, 0.6);
      backdrop-filter: blur(24px);
     --webkit-backdrop-filter: blur(30px); /* For safari */
     transition: right .4s;
