@@ -5,7 +5,7 @@ const gallery = document.querySelector(".gallery")
 const itemboxes = document.querySelectorAll(".itembox")
 console.log(itemboxes)
 
-gallery.addEventListener("click", (e) => {
+gallery.addEventListener("click", (e) => { 
     console.log(e)
 const filterValue = e.target.getAttribute("data-filter");
 

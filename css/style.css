@@ -138,6 +138,10 @@
   opacity: 1;
   z-index: 10; 
 }
+
+.button__light {
+  color: rgb(235, 235, 227);
+}
 .container .art_cat .itembox.show {
   animation: show .5s ease 0s 1 forwards;
   transform-origin: center;
@@ -205,8 +209,10 @@ h3  {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 15px;
-
+  font-size: 1em;
+  text-decoration: none;
+  font-family: "Roboto Serif", serif;
+  background-color: rgb(232, 69, 69, .3);
 }
 .image__description  {
   display: flex;
@@ -503,3 +509,5 @@ dialog::backdrop {
   color: rgb(201, 190, 190); 
  
 }
+
+
